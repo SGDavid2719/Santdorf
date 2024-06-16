@@ -1,0 +1,22 @@
+@import url("../../../styles/sizing.css");
+@import url("../../../styles/spacing.css");
+@import url("../../../styles/color.css");
+.icon {
+    padding: var(--space-xs);
+    fill: var(--strong-primary);
+}
+
+.icon--small {
+    width: var(--size-sm);
+    height: var(--size-sm);
+}
+
+.icon--medium {
+    width: var(--size-md);
+    height: var(--size-md);
+}
+
+.icon--large {
+    width: var(--size-lg);
+    height: var(--size-lg);
+}

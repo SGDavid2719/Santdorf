@@ -1,0 +1,44 @@
+@import url("../../../styles/sizing.css");
+@import url("../../../styles/spacing.css");
+
+.badge {
+    padding: var(--space-xs);
+    border-radius: 9999px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    place-content: center;
+    font-weight: 600;
+}
+
+.badge--content {
+    text-align: center;
+}
+
+.badge--primary {
+    background-color: var(--light-primary);
+    color: var(--strong-primary);
+}
+
+.badge--secondary {
+    color: var(--light-secondary);
+    background-color: var(--strong-secondary);
+}
+
+.badge--small {
+    font-size: var(--text-sm);
+    width: var(--size-md);
+    height: var(--size-sm);
+}
+
+.badge--medium {
+    font-size: var(--text-md);
+    width: var(--size-lg);
+    height: var(--size-md);
+}
+
+.badge--large {
+    font-size: var(--text-xl);
+    width: var(--size-xl);
+    height: var(--size-lg);
+}

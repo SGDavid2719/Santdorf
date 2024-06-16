@@ -15,7 +15,7 @@ interface AvatarProps {
      */
     extraClassName?: string;
     /**
-     *
+     * Optional styles
      */
     style?: React.CSSProperties;
 }

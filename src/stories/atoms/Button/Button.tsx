@@ -15,6 +15,10 @@ interface ButtonProps {
      */
     extraClassName?: string;
     /**
+     * Optional styles
+     */
+    style?: React.CSSProperties;
+    /**
      * Optional click handler
      */
     onClick?: () => void;

@@ -17,8 +17,8 @@
 }
 
 .btn--secondary {
-    background-color: var(--light-secondary);
-    color: var(--strong-secondary);
+    color: var(--light-secondary);
+    background-color: var(--strong-secondary);
 }
 
 .btn--small {

@@ -1,7 +1,7 @@
-import { joinClassNames } from "../../../utils/styles";
+import { getSizeClassName, joinClassNames } from "../../../utils/styles";
 import "./button.css";
 
-export interface ButtonProps {
+interface ButtonProps {
     /**
      * Button contents
      */
@@ -61,18 +61,7 @@ export function Button({
     disabled = false,
     ...props
 }: ButtonProps): React.ReactNode {
-    let sizeClassName = "";
-    switch (size) {
-        case "large":
-            sizeClassName = "btn--large";
-            break;
-        case "medium":
-            sizeClassName = "btn--medium";
-            break;
-        default:
-            sizeClassName = "btn--small";
-            break;
-    }
+    const sizeClassName = getSizeClassName({ size, baseName: "btn" });
 
     return (
         <button

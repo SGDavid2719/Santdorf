@@ -1,0 +1,31 @@
+@import url("../../../styles/sizing.css");
+@import url("../../../styles/spacing.css");
+
+.avatar {
+    padding: var(--space-xs);
+}
+
+.avatar--rounded {
+    border-radius: 9999px;
+    border: none;
+}
+
+.avatar--squared {
+    border-radius: 0.25rem;
+    border: none;
+}
+
+.avatar--small {
+    width: var(--size-sm);
+    height: var(--size-sm);
+}
+
+.avatar--medium {
+    width: var(--size-md);
+    height: var(--size-md);
+}
+
+.avatar--large {
+    width: var(--size-lg);
+    height: var(--size-lg);
+}

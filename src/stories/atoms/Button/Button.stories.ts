@@ -37,17 +37,3 @@ export const Secondary: Story = {
         extraClassName: "btn--secondary",
     },
 };
-
-export const Large: Story = {
-    args: {
-        size: "large",
-        label: "Button",
-    },
-};
-
-export const Small: Story = {
-    args: {
-        size: "small",
-        label: "Button",
-    },
-};

@@ -2,7 +2,7 @@ import { ICONS } from "../../../shared/icons";
 import { getSizeClassName, joinClassNames } from "../../../utils/styles";
 import "./icon.css";
 
-interface IconProps {
+export interface IconProps {
     /**
      * Mandatory property to indicate the icon to represent.
      */

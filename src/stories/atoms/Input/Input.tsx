@@ -39,7 +39,7 @@ export interface InputProps {
 /**
  * Primary UI component for user interaction
  */
-export const Input: React.FC<InputProps> = ({
+export function Input({
     type = "text",
     name,
     value,
@@ -48,7 +48,7 @@ export const Input: React.FC<InputProps> = ({
     placeholder,
     readOnly = false,
     inputClassName,
-}) => {
+}: InputProps): React.ReactNode {
     // States
     const [searchingValue, setSearchingValue] = useState(value ?? "");
 
@@ -84,4 +84,4 @@ export const Input: React.FC<InputProps> = ({
             onChange={onChange}
         />
     );
-};
+}

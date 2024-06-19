@@ -38,3 +38,5 @@ export type InputType =
     | "time"
     | "url"
     | "week";
+
+export type ClassNames = string | null | undefined;

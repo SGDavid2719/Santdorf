@@ -1,5 +1,11 @@
-export function joinClassNames({ classNames }: { classNames: string[] }) {
-    return classNames.join(" ");
+import { ClassNames } from "../shared/types";
+
+export function joinClassNames({ classNames }: { classNames: ClassNames[] }) {
+    return classNames
+        .filter(
+            (className) => typeof className === "string" && className !== ""
+        )
+        .join(" ");
 }
 
 export function getSizeClassName({

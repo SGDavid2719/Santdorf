@@ -5,7 +5,7 @@ interface ButtonProps {
     /**
      * Button contents
      */
-    label: string;
+    children: string | JSX.Element;
     /**
      * How large should the button be?
      */
@@ -22,6 +22,14 @@ interface ButtonProps {
      * Optional click handler
      */
     onClick?: () => void;
+    /**
+     * Optional mouse enter handler
+     */
+    onMouseEnter?: () => void;
+    /**
+     * Optional mouse leave handler
+     */
+    onMouseLeave?: () => void;
     /**
      * Optional property to indicate the type of the button
      */
@@ -53,7 +61,7 @@ interface ButtonProps {
 }
 
 export function Button({
-    label,
+    children,
     size = "medium",
     extraClassName = "",
     type = "button",
@@ -81,7 +89,7 @@ export function Button({
             })}
             {...props}
         >
-            {label}
+            {children}
         </button>
     );
 }

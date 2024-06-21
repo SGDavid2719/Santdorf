@@ -1,11 +1,11 @@
 import { getSizeClassName, joinClassNames } from "../../../utils/styles";
 import "./button.css";
 
-interface ButtonProps {
+export interface ButtonProps {
     /**
      * Button contents
      */
-    children: string | JSX.Element;
+    children?: string | React.JSX.Element;
     /**
      * How large should the button be?
      */

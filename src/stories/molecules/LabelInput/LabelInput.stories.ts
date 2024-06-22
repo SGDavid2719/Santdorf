@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Label } from "./Label";
+import { LabelInput } from "./LabelInput";
 
 const meta = {
-    title: "Atoms/Label",
-    component: Label,
+    title: "Molecules/LabelInput",
+    component: LabelInput,
     parameters: {
         layout: "centered",
         docs: {
@@ -11,14 +11,15 @@ const meta = {
         },
     },
     tags: ["autodocs"],
-} satisfies Meta<typeof Label>;
+} satisfies Meta<typeof LabelInput>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        label: "Label",
-        htmlFor: "",
+        label: "LabelInput",
+        htmlFor: "test",
+        name: "test",
     },
 };

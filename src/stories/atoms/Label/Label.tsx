@@ -2,7 +2,7 @@ export interface LabelProps {
     /**
      * Mandatory property to indicate the contained text
      */
-    text: string;
+    label: string;
     /**
      * Mandatory property to indicate the id of the element to which it is linked
      */
@@ -13,17 +13,14 @@ export interface LabelProps {
     labelClassName?: string;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export function Label({
-    text,
+    label,
     htmlFor,
     labelClassName,
 }: LabelProps): React.ReactNode {
     return (
         <label htmlFor={htmlFor} className={labelClassName}>
-            {text}
+            {label}
         </label>
     );
 }

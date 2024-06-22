@@ -12,6 +12,10 @@ interface IconButtonProps extends ButtonProps, IconProps {
      * Optional property to indicate the icon alignment
      */
     align?: "end" | "start";
+    /**
+     * Optional property to indicate icon classNames
+     */
+    extraIconClassName?: string;
 }
 
 export function IconButton(props: IconButtonProps): React.ReactNode {
@@ -26,8 +30,9 @@ export function IconButton(props: IconButtonProps): React.ReactNode {
         disabled,
         text,
         align,
+        onClick,
     } = props;
-    const { iconId, style, stroke } = props;
+    const { iconId, style, stroke, extraIconClassName } = props;
 
     const alignmentClassName = getAlignmentClassName({
         align,
@@ -47,6 +52,7 @@ export function IconButton(props: IconButtonProps): React.ReactNode {
             extraClassName={joinClassNames({
                 classNames: ["iconButton", alignmentClassName, extraClassName],
             })}
+            onClick={onClick}
         >
             <>
                 {text && <span className="iconButton-text">{text}</span>}
@@ -54,7 +60,9 @@ export function IconButton(props: IconButtonProps): React.ReactNode {
                     iconId={iconId}
                     style={style}
                     stroke={stroke}
-                    extraClassName="iconButton-icon"
+                    extraClassName={joinClassNames({
+                        classNames: ["iconButton-icon", extraIconClassName],
+                    })}
                 />
             </>
         </Button>

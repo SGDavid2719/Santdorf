@@ -25,6 +25,14 @@ export const Default: Story = {
     },
 };
 
+export const WithText: Story = {
+    args: {
+        iconId: "add",
+        stroke: "var(--strong-primary)",
+        text: "Button",
+    },
+};
+
 export const Primary: Story = {
     args: {
         iconId: "add",

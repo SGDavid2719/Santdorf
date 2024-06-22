@@ -29,3 +29,23 @@ export function getSizeClassName({
     }
     return sizeClassName;
 }
+
+export function getAlignmentClassName({
+    align,
+    baseName,
+}: {
+    align?: "end" | "start";
+    baseName: string;
+}) {
+    let alignmentClassName = "";
+    switch (align) {
+        case "end":
+            alignmentClassName = `${baseName}--end`;
+            break;
+        case "start":
+        default:
+            alignmentClassName = `${baseName}--start`;
+            break;
+    }
+    return alignmentClassName;
+}

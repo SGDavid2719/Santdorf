@@ -1,8 +1,18 @@
+import { getAlignmentClassName, joinClassNames } from "../../../utils/styles";
 import { Button, ButtonProps } from "../../atoms/Button/Button";
 import { Icon, IconProps } from "../../atoms/Icon/Icon";
 import "./iconButton.css";
 
-interface IconButtonProps extends ButtonProps, IconProps {}
+interface IconButtonProps extends ButtonProps, IconProps {
+    /**
+     * Optional button text
+     */
+    text?: string;
+    /**
+     * Optional property to indicate the icon alignment
+     */
+    align?: "end" | "start";
+}
 
 export function IconButton(props: IconButtonProps): React.ReactNode {
     const { size, extraClassName } = props;
@@ -14,8 +24,15 @@ export function IconButton(props: IconButtonProps): React.ReactNode {
         ariaChecked,
         ariaPressed,
         disabled,
+        text,
+        align,
     } = props;
     const { iconId, style, stroke } = props;
+
+    const alignmentClassName = getAlignmentClassName({
+        align,
+        baseName: "iconButton",
+    });
 
     return (
         <Button
@@ -27,9 +44,19 @@ export function IconButton(props: IconButtonProps): React.ReactNode {
             ariaPressed={ariaPressed}
             disabled={disabled}
             size={size}
-            extraClassName={extraClassName}
+            extraClassName={joinClassNames({
+                classNames: ["iconButton", alignmentClassName, extraClassName],
+            })}
         >
-            <Icon iconId={iconId} style={style} stroke={stroke} />
+            <>
+                {text && <span className="iconButton-text">{text}</span>}
+                <Icon
+                    iconId={iconId}
+                    style={style}
+                    stroke={stroke}
+                    extraClassName="iconButton-icon"
+                />
+            </>
         </Button>
     );
 }

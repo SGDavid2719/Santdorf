@@ -1,0 +1,20 @@
+.tabs-list {
+    list-style: none;
+    display: flex;
+    padding-inline: 0;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.tabs-list-item {
+    border-style: solid;
+    border-radius: 0.25rem;
+}
+
+.tabs-list-item--active {
+    border-color: black;
+}
+
+.tabs-list-item--inactive {
+    border-color: white;
+}

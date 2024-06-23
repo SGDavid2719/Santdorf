@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { InputType } from "../../../shared/types";
+import { joinClassNames } from "../../../utils/styles";
+import "./input.css";
 
 export interface InputProps {
     /**
@@ -80,7 +82,9 @@ export function Input({
             minLength={minLength}
             placeholder={placeholderCheckingType}
             readOnly={readOnly}
-            className={inputClassName}
+            className={joinClassNames({
+                classNames: ["input", inputClassName],
+            })}
             onChange={onChange}
         />
     );

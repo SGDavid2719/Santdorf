@@ -95,9 +95,9 @@ export function Button({
 }
 
 export function PrimaryButton(props: Readonly<ButtonProps>): React.ReactNode {
-    return <Button extraClassName="btn--primary" {...props} />;
+    return <Button extraClassName="primary" {...props} />;
 }
 
 export function SecondaryButton(props: Readonly<ButtonProps>): React.ReactNode {
-    return <Button extraClassName="btn--secondary" {...props} />;
+    return <Button extraClassName="secondary" {...props} />;
 }

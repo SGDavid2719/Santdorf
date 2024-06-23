@@ -1,0 +1,10 @@
+@import url("../../../styles/spacing.css");
+
+.input {
+    border-radius: 9999px;
+    border: solid;
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+}

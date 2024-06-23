@@ -11,16 +11,6 @@
     cursor: pointer;
 }
 
-.btn--primary {
-    background-color: var(--light-primary);
-    color: var(--strong-primary);
-}
-
-.btn--secondary {
-    color: var(--light-secondary);
-    background-color: var(--strong-secondary);
-}
-
 .btn--small {
     font-size: var(--text-sm);
 }

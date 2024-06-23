@@ -20,8 +20,8 @@ export const Default: Story = {
     args: {
         value: 5,
         style: {
-            backgroundColor: "black",
-            color: "white",
+            backgroundColor: "#EFEFEF",
+            color: "black",
         },
     },
 };
@@ -29,13 +29,13 @@ export const Default: Story = {
 export const Primary: Story = {
     args: {
         value: 5,
-        extraClassName: "badge--primary",
+        extraClassName: "primary",
     },
 };
 
 export const Secondary: Story = {
     args: {
         value: 5,
-        extraClassName: "badge--secondary",
+        extraClassName: "secondary",
     },
 };

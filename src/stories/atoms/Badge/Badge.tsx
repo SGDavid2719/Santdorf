@@ -45,9 +45,9 @@ export function Badge({
 }
 
 export function PrimaryBadge(props: Readonly<BadgeProps>): React.ReactNode {
-    return <Badge extraClassName="badge--primary" {...props} />;
+    return <Badge extraClassName="primary" {...props} />;
 }
 
 export function SecondaryBadge(props: Readonly<BadgeProps>): React.ReactNode {
-    return <Badge extraClassName="badge--secondary" {...props} />;
+    return <Badge extraClassName="secondary" {...props} />;
 }

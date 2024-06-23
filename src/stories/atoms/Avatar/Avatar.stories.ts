@@ -20,7 +20,7 @@ export const Default: Story = {
     args: {
         children: "",
         style: {
-            backgroundColor: "var(--strong-primary)",
+            backgroundColor: "#EFEFEF",
         },
     },
 };
@@ -30,7 +30,7 @@ export const Rounded: Story = {
         children: "",
         extraClassName: "avatar--rounded",
         style: {
-            backgroundColor: "var(--strong-primary)",
+            backgroundColor: "#EFEFEF",
         },
     },
 };
@@ -40,7 +40,7 @@ export const Squared: Story = {
         children: "",
         extraClassName: "avatar--squared",
         style: {
-            backgroundColor: "var(--strong-primary)",
+            backgroundColor: "#EFEFEF",
         },
     },
 };

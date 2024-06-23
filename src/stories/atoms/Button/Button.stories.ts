@@ -20,20 +20,20 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        label: "Button",
+        children: "Button",
     },
 };
 
 export const Primary: Story = {
     args: {
-        label: "Primary Button",
-        extraClassName: "btn--primary",
+        children: "Primary Button",
+        extraClassName: "primary",
     },
 };
 
 export const Secondary: Story = {
     args: {
-        label: "Secondary Button",
-        extraClassName: "btn--secondary",
+        children: "Secondary Button",
+        extraClassName: "secondary",
     },
 };

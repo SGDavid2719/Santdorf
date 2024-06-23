@@ -1,5 +1,6 @@
 @import url("../../../styles/sizing.css");
 @import url("../../../styles/spacing.css");
+@import url("../../../styles/color.css");
 
 .badge {
     padding: var(--space-xs);
@@ -13,16 +14,6 @@
 
 .badge--content {
     text-align: center;
-}
-
-.badge--primary {
-    background-color: var(--light-primary);
-    color: var(--strong-primary);
-}
-
-.badge--secondary {
-    color: var(--light-secondary);
-    background-color: var(--strong-secondary);
 }
 
 .badge--small {

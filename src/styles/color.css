@@ -2,8 +2,35 @@
     --strong-primary: #2c3531;
     --strong-secondary: #116466;
 
-    --light-primary: #d9b08c;
+    --light-primary: #c2a48a;
     --light-secondary: #ffcb9a;
+    --light-ternary: #d1e8e2;
 
     --color-text: #d1e8e2;
+
+    --rgb-strong: rgb(44, 53, 49);
+    --gradient-strong: linear-gradient(
+        135deg,
+        rgba(44, 53, 49, 1) 72%,
+        rgba(17, 100, 102, 1) 97%
+    );
+
+    --rgb-light: rgb(194, 164, 138);
+    --gradient-light: linear-gradient(
+        135deg,
+        rgba(194, 164, 138, 1) 57%,
+        rgba(255, 203, 154, 1) 98%
+    );
+}
+
+.primary {
+    background: var(--rgb-light);
+    background: var(--gradient-light);
+    color: var(--strong-primary);
+}
+
+.secondary {
+    background: var(--rgb-strong);
+    background: var(--gradient-strong);
+    color: var(--light-secondary);
 }

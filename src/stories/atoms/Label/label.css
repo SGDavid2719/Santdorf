@@ -1,7 +1,7 @@
-@import url("../../../styles/color.css");
-@import url("../../../styles/typography.css");
+@import url('../../../styles/color.css');
+@import url('../../../styles/typography.css');
 
 label {
-	color: var(--color-text-day);
-	font-family: var(--font-primary);
+  color: var(--color-text-day);
+  font-family: var(--font-primary);
 }

@@ -1,40 +1,40 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Tooltip } from "./Tooltip";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Tooltip } from './Tooltip';
 
 const meta = {
-    title: "Molecules/Tooltip",
-    component: Tooltip,
-    parameters: {
-        layout: "centered",
-        docs: {
-            toc: true,
-        },
+  title: 'Molecules/Tooltip',
+  component: Tooltip,
+  parameters: {
+    layout: 'centered',
+    docs: {
+      toc: true,
     },
-    tags: ["autodocs"],
+  },
+  tags: ['autodocs'],
 } satisfies Meta<typeof Tooltip>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-    args: {
-        children: "Tooltip",
-        content: "Content",
-    },
+  args: {
+    children: 'Tooltip',
+    content: 'Content',
+  },
 };
 
 export const ShowingOnInit: Story = {
-    args: {
-        children: "Tooltip",
-        content: "Content",
-        initialState: true,
-    },
+  args: {
+    children: 'Tooltip',
+    content: 'Content',
+    initialState: true,
+  },
 };
 
 export const OnClick: Story = {
-    args: {
-        children: "Tooltip",
-        content: "Content",
-        actionOnClick: true,
-    },
+  args: {
+    children: 'Tooltip',
+    content: 'Content',
+    actionOnClick: true,
+  },
 };

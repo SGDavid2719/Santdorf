@@ -1,10 +1,10 @@
-@import url("../../../styles/spacing.css");
+@import url('../../../styles/spacing.css');
 
 .labelInput_label-block {
-	display: block;
-	margin-bottom: var(--space-xxs);
+  display: block;
+  margin-bottom: var(--space-xxs);
 }
 
 .labelInput_label-inline {
-	margin-right: var(--space-xxs);
+  margin-right: var(--space-xxs);
 }

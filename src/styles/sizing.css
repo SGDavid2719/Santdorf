@@ -1,54 +1,54 @@
 :root {
-    --size-unit: 1em;
-    --size-xxxs: calc(0.25 * var(--size-unit));
-    --size-xxs: calc(0.375 * var(--size-unit));
-    --size-xs: calc(0.5 * var(--size-unit));
-    --size-sm: calc(0.75 * var(--size-unit));
-    --size-md: calc(1.25 * var(--size-unit));
-    --size-lg: calc(2 * var(--size-unit));
-    --size-xl: calc(3.25 * var(--size-unit));
-    --size-xxl: calc(5.25 * var(--size-unit));
-    --size-xxxl: calc(8.5 * var(--size-unit));
+  --size-unit: 1em;
+  --size-xxxs: calc(0.25 * var(--size-unit));
+  --size-xxs: calc(0.375 * var(--size-unit));
+  --size-xs: calc(0.5 * var(--size-unit));
+  --size-sm: calc(0.75 * var(--size-unit));
+  --size-md: calc(1.25 * var(--size-unit));
+  --size-lg: calc(2 * var(--size-unit));
+  --size-xl: calc(3.25 * var(--size-unit));
+  --size-xxl: calc(5.25 * var(--size-unit));
+  --size-xxxl: calc(8.5 * var(--size-unit));
 
-    --component-padding: var(--size-sm);
+  --component-padding: var(--size-sm);
 }
 
 .height--md {
-    height: var(--size-md);
+  height: var(--size-md);
 }
 
 .height--sm {
-    height: var(--size-sm);
+  height: var(--size-sm);
 }
 
 .height--lg {
-    height: var(--size-lg);
+  height: var(--size-lg);
 }
 
 .height--xl {
-    height: var(--size-xl);
+  height: var(--size-xl);
 }
 
 .height--xxl {
-    height: var(--size-xxl);
+  height: var(--size-xxl);
 }
 
 .width--md {
-    width: var(--size-md);
+  width: var(--size-md);
 }
 
 .width--sm {
-    width: var(--size-sm);
+  width: var(--size-sm);
 }
 
 .width--lg {
-    width: var(--size-lg);
+  width: var(--size-lg);
 }
 
 .width--xl {
-    width: var(--size-xl);
+  width: var(--size-xl);
 }
 
 .width--xxl {
-    width: var(--size-xxl);
+  width: var(--size-xxl);
 }

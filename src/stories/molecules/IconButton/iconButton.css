@@ -1,29 +1,29 @@
-@import url("../../../styles/color.css");
+@import url('../../../styles/color.css');
 
 .iconButton {
-	display: flex;
-	gap: 0.1rem;
+  display: flex;
+  gap: 0.1rem;
 }
 
 .iconButton.end {
-	flex-direction: row;
+  flex-direction: row;
 }
 
 .iconButton.start {
-	flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .iconButton-text {
-	display: block;
-	margin-top: auto;
-	margin-bottom: auto;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .iconButton-icon {
-	padding: 0 !important;
-	margin-top: auto;
-	margin-bottom: auto;
-	color: currentColor;
-	stroke: currentColor;
-	fill: currentColor;
+  padding: 0 !important;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: currentColor;
+  stroke: currentColor;
+  fill: currentColor;
 }

@@ -1,44 +1,44 @@
-@import url("../../../styles/color.css");
-@import url("../../../styles/typography.css");
+@import url('../../../styles/color.css');
+@import url('../../../styles/typography.css');
 
 .banner {
-	padding: 0 var(--space-sm);
-	border: 1px solid var(--color-border);
-	border-radius: 4px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-	font-family: var(--font-primary);
+  padding: 0 var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-family: var(--font-primary);
 }
 
 .banner-icon {
-	color: currentColor;
-	stroke: currentColor;
-	fill: currentColor;
+  color: currentColor;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
 .banner.default {
-	background-color: var(--color-text-night);
-	color: var(--color-text-day);
+  background-color: var(--color-text-night);
+  color: var(--color-text-day);
 }
 
 .banner.info {
-	background-color: var(--color-blue-midnight);
-	color: var(--color-text-day);
+  background-color: var(--color-blue-midnight);
+  color: var(--color-text-day);
 }
 
 .banner.success {
-	background-color: var(--color-dark-green);
-	color: var(--color-text-day);
+  background-color: var(--color-dark-green);
+  color: var(--color-text-day);
 }
 
 .banner.danger {
-	background-color: var(--color-coral-soft);
-	color: var(--color-text-night);
+  background-color: var(--color-coral-soft);
+  color: var(--color-text-night);
 }
 
 .banner.warning {
-	background-color: var(--color-rose-gold);
-	color: var(--color-text-night);
+  background-color: var(--color-rose-gold);
+  color: var(--color-text-night);
 }

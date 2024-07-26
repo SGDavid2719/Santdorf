@@ -1,37 +1,120 @@
-import { Meta } from "@storybook/blocks";
+import { Meta } from '@storybook/blocks';
 
 <Meta title="Santdorf - SGDavid2719" />
 
-<div className="sb-container">
-  <div className='sb-section-title'>
-    # Santdorf
+# Santdorf
 
-    Design System
+<hr />
 
-  </div>
-</div>
+# Introduction
 
-<style>
-	{`
-  .sb-container {
-    margin-bottom: 48px;
-  }
+Welcome to the Design System documentation. This guide provides comprehensive details about the various design principles, components, and patterns used in this design system. By following this guide, you will be able to create consistent and accessible user interfaces that adhere to this design standards.
 
-  .sb-section {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
+# Table of Contents
 
-  .sb-section-title {
-    margin-bottom: 32px;
-  }
+- [Introduction](#introduction)
+- [Colors](#colors)
+- [Typography](#typography)
+- [Spacing ](#spacing)
+- [Layout](#layout)
+- [Components](#components)
 
-  @media screen and (max-width: 600px) {
-    .sb-section {
-      flex-direction: column;
-    }
-  }
-  `}
-</style>
+# Colors
+
+Santdorf uses a carefully selected palette to ensure an aesthetically pleasing and accessible interface. Below are the color guidelines:
+
+## Primary Colors
+
+```js
+const colors = {
+  primary: '#003366',
+  error: '#ff6f61',
+  success: '#31644f',
+  warning: '#eab676',
+  background: '#1f1f1f',
+  accent: '#ffd700',
+};
+```
+
+### Usage
+
+- Primary: Used for primary actions and highlights.
+- Error: Used for error states.
+- Success: Used for success states.
+- Warning: Used for warning states.
+- Background: Used for the main background color.
+- Accent: Used for interactive elements.
+
+# Typography
+
+Typography is a crucial aspect, providing a clear hierarchy and readability.
+
+## Font Family
+
+```
+font-family: 'sans-serif', 'serif';
+```
+
+## Font Sizes
+
+- Base size: 1em
+- Scale ratio: 1.2
+
+### Usage
+
+- xs: calc(1em / calc(10px \* pow(var(scale-ratio), 2)));
+- sm: calc(1em / var(scale-ratio));
+- md: calc(1em \* var(scale-ratio));
+- lg: calc(1em _ calc(10px _ pow(var(scale-ratio), 2)));
+- xl: calc(1em _ calc(10px _ pow(var(scale-ratio), 3)));
+- xxl: calc(1em _ calc(10px _ pow(var(scale-ratio), 4)));
+- xxxl: calc(1em _ calc(10px _ pow(var(scale-ratio), 5)));
+
+# Spacing
+
+Consistent spacing is essential for a clean and organized interface.
+
+## Scale
+
+- Base unit: 1em
+
+### Usage
+
+- xxxs: calc(0.25 \* var(unit));
+- xxs: calc(0.375 \* var(unit));
+- xs: calc(0.5 \* var(unit));
+- sm: calc(0.75 \* var(unit));
+- md: calc(1.25 \* var(unit));
+- lg: calc(2 \* var(unit));
+- xl: calc(3.25 \* var(unit));
+- xxl: calc(5.25 \* var(unit));
+- xxxl: calc(8.5 \* var(unit));
+
+# Layout
+
+Santdorf's layout system helps in creating responsive and flexible designs.
+
+## Grid System
+
+TODO
+
+# Components
+
+- Atoms
+  - Avatar
+  - Backdrop
+  - Badge
+  - Button
+  - Icon
+  - Input
+  - Label
+  - Loading
+- Molecules
+  - Banner
+  - IconButton
+  - LabelInput
+  - Tooltip
+- Organisms
+  - Accordion
+  - Modal
+  - Tabs

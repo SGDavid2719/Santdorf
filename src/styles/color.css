@@ -1,36 +1,19 @@
 :root {
-    --strong-primary: #2c3531;
-    --strong-secondary: #116466;
+	/* Main colors */
+	--color-gray-lead: #1f1f1f;
+	--color-blue-midnight: #003366;
+	--color-coral-soft: #ff6f61;
+	--color-rose-gold: #eab676;
+	--color-dark-green: #31644f;
 
-    --light-primary: #c2a48a;
-    --light-secondary: #ffcb9a;
-    --light-ternary: #d1e8e2;
+	/* Colors for accessibility */
+	--color-text-day: #ffffff;
+	--color-text-night: #000000;
+	--color-border: #333333;
+	--color-bg: #1f1f1f;
+	--color-focus: #ffd700;
 
-    --color-text: #d1e8e2;
-
-    --rgb-strong: rgb(44, 53, 49);
-    --gradient-strong: linear-gradient(
-        135deg,
-        rgba(44, 53, 49, 1) 72%,
-        rgba(17, 100, 102, 1) 97%
-    );
-
-    --rgb-light: rgb(194, 164, 138);
-    --gradient-light: linear-gradient(
-        135deg,
-        rgba(194, 164, 138, 1) 57%,
-        rgba(255, 203, 154, 1) 98%
-    );
-}
-
-.primary {
-    background: var(--rgb-light);
-    background: var(--gradient-light);
-    color: var(--strong-primary);
-}
-
-.secondary {
-    background: var(--rgb-strong);
-    background: var(--gradient-strong);
-    color: var(--light-secondary);
+	/* Colors for status */
+	--color-online: #00ff00;
+	--color-offline: #ff0000;
 }

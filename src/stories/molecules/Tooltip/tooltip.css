@@ -2,113 +2,118 @@
 @import url("../../../styles/spacing.css");
 
 .tooltip {
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
+}
+
+.trigger {
+	background-color: transparent;
+	border: none;
+	color: var(--color-text-day);
+	font-size: var(--text-md);
+	cursor: pointer;
 }
 
 .tooltip_button {
-    width: fit-content !important;
-    min-width: fit-content !important;
+	width: fit-content !important;
+	min-width: fit-content !important;
 }
 
 .tooltip_layout {
-    padding: 0;
-    margin: 0;
-    border: none;
-    vertical-align: baseline;
+	padding: 0;
+	margin: 0;
+	border: none;
+	vertical-align: baseline;
 }
 
 .tooltip_content {
-    position: absolute;
-    z-index: 10;
-    inset: 0;
-    margin-top: var(--space-xs);
-    width: auto;
-    height: fit-content;
+	position: absolute;
+	z-index: 10;
+	inset: 0;
+	width: auto;
+	height: fit-content;
 }
 
 .tooltip_child {
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    z-index: 10;
-    padding-top: var(--space-xxxs);
-    padding-bottom: var(--space-xxxs);
-    padding-left: calc(1.5 * var(--space-unit));
-    padding-right: calc(2.5 * var(--space-unit));
-    border-radius: var(--size-xxs);
-    inset-inline-start: 50%;
-
-    background-color: red;
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 10;
+	padding-top: var(--space-xxxs);
+	padding-bottom: var(--space-xxxs);
+	padding-left: calc(1.5 * var(--space-unit));
+	padding-right: calc(2.5 * var(--space-unit));
+	border-radius: var(--size-xxs);
+	inset-inline-start: 50%;
+	background-color: var(--color-rose-gold);
 }
 
 .tooltip_child::before {
-    display: block;
-    position: absolute;
-    content: "";
+	display: block;
+	position: absolute;
+	content: "";
 }
 
 .tooltip_child_button {
-    position: absolute;
-    width: fit-content;
-    display: flex;
-    justify-content: end;
-    font-size: var(--size-sm);
-    font-weight: 800;
-    margin-top: -(var(--space-xs));
+	position: absolute;
+	width: fit-content;
+	display: flex;
+	justify-content: end;
+	font-size: var(--size-sm);
+	font-weight: 800;
+	margin-top: -(var(--space-xs));
 }
 
 .tooltip_child_button > .tooltip_button {
-    padding: 0 !important;
-    font-size: var(--text-sm) !important;
-    background-color: transparent;
+	padding: 0 !important;
+	font-size: var(--text-sm) !important;
+	background-color: transparent;
 }
 
 .tooltip_content_triangle {
-    display: block;
-    position: absolute;
-    z-index: 10;
-    inset-inline-start: 50%;
-    block-size: var(--size-xxs);
-    inline-size: var(--size-sm);
-    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-    transform: translate(100%, -75%);
-
-    background-color: red;
+	display: block;
+	position: absolute;
+	z-index: 10;
+	inset-inline-start: 50%;
+	block-size: var(--size-xxs);
+	inline-size: var(--size-sm);
+	clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+	transform: translate(100%, -75%);
+	background-color: var(--color-rose-gold);
 }
 
 .tooltip_x--small {
-    transform: translateX(calc(8 * var(--space-unit)));
+	transform: translateX(calc(8 * var(--space-unit)));
 }
 
 .tooltip_x--medium {
-    transform: translateX(calc(7.5 * var(--space-unit)));
+	transform: translateX(calc(7.5 * var(--space-unit)));
 }
 
 .tooltip_x--large {
-    transform: translateX(calc(7.5 * var(--space-unit)));
+	transform: translateX(calc(7.5 * var(--space-unit)));
 }
 
 .tooltip_y--small {
-    transform: translateY(var(--space-lg));
+	transform: translateY(var(--space-lg));
 }
 
 .tooltip_y--medium {
-    transform: translateY(var(--space-lg));
+	transform: translateY(var(--space-lg));
 }
 
 .tooltip_y--large {
-    transform: translateY(var(--space-lg));
+	transform: translateY(var(--space-lg));
 }
 
 .tooltip--small {
-    font-size: var(--text-sm);
+	font-size: var(--text-sm);
 }
 
 .tooltip--medium {
-    font-size: var(--text-md);
+	font-size: var(--text-md);
 }
 
 .tooltip--large {
-    font-size: var(--text-lg);
+	font-size: var(--text-lg);
 }

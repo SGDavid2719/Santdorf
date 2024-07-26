@@ -1,49 +1,80 @@
-import { getSizeClassName, joinClassNames } from "../../../utils/styles";
+import { joinClassNames } from "../../../utils/styles";
 import "./avatar.css";
 
+interface DefaultAvatar extends AvatarProps {
+	/**
+	 * How large should be
+	 */
+	size?: "small" | "medium" | "large";
+	/**
+	 * How should be
+	 */
+	form?: "rounded" | "squared";
+}
+
 interface AvatarProps {
-    /**
-     * Avatar contents
-     */
-    children: React.ReactNode;
-    /**
-     * How large should the button be?
-     */
-    size?: "small" | "medium" | "large";
-    /**
-     * Optional classNames
-     */
-    extraClassName?: string;
-    /**
-     * Optional styles
-     */
-    style?: React.CSSProperties;
+	/**
+	 * Avatar image source
+	 */
+	src: string;
+	/**
+	 * Avatar image alternative text
+	 */
+	alt: string;
+	/**
+	 * Indicates if the user is online
+	 */
+	isOnline?: boolean;
+	/**
+	 * Optional classNames
+	 */
+	extraClassName?: string;
+	/**
+	 * Optional styles
+	 */
+	style?: React.CSSProperties;
 }
 
 export function Avatar({
-    size = "medium",
-    children,
-    extraClassName = "",
-    ...props
-}: AvatarProps): React.ReactNode {
-    const sizeClassName = getSizeClassName({ size, baseName: "avatar" });
+	src,
+	alt,
+	isOnline,
+	size = "medium",
+	extraClassName = "",
+	form = "rounded",
+	...props
+}: DefaultAvatar): React.ReactNode {
+	const status = isOnline ? "" : "offline";
 
-    return (
-        <div
-            className={joinClassNames({
-                classNames: ["avatar", sizeClassName, extraClassName],
-            })}
-            {...props}
-        >
-            {children}
-        </div>
-    );
+	return (
+		<div
+			className={joinClassNames({
+				classNames: ["avatar", status, extraClassName],
+			})}
+			{...props}
+		>
+			<img
+				src={src}
+				alt={alt}
+				className={joinClassNames({
+					classNames: [size, form],
+				})}
+			/>
+			{isOnline != null && (
+				<div
+					className={joinClassNames({
+						classNames: ["status", size],
+					})}
+				/>
+			)}
+		</div>
+	);
 }
 
 export function RoundedAvatar(props: Readonly<AvatarProps>): React.ReactNode {
-    return <Avatar extraClassName="avatar--rounded" {...props} />;
+	return <Avatar form="rounded" {...props} />;
 }
 
 export function SquaredAvatar(props: Readonly<AvatarProps>): React.ReactNode {
-    return <Avatar extraClassName="avatar--squared" {...props} />;
+	return <Avatar form="squared" {...props} />;
 }

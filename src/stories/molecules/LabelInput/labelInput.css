@@ -1,7 +1,10 @@
+@import url("../../../styles/spacing.css");
+
 .labelInput_label-block {
-    display: block;
+	display: block;
+	margin-bottom: var(--space-xxs);
 }
 
 .labelInput_label-inline {
-    margin-right: 0.5rem;
+	margin-right: var(--space-xxs);
 }

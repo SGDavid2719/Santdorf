@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/h"
+
+echo "Executing npm run format"
+npm run format
+
+echo "Executing npm run type-check"
+npm run type-check

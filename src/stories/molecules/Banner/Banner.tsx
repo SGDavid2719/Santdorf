@@ -40,6 +40,7 @@ export function Banner({
 				stroke={props.stroke}
 				style={{ margin: "auto", strokeWidth: 2 }}
 				size={props.size}
+				extraClassName="banner-icon"
 			/>
 			{children}
 		</div>

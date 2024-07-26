@@ -1,21 +1,32 @@
+@import url("../../../styles/color.css");
+
 .tabs-list {
 	list-style: none;
 	display: flex;
 	padding-inline: 0;
-	gap: 0.5rem;
 	margin: 0;
 }
 
-.btn.active {
-	border-style: solid !important;
-	border-radius: 0.25rem;
-	border-color: var(--color-text-night);
+.tabs-list-item {
+	border: 1px solid var(--color-border);
 }
 
-.btn.inactive {
-	border-style: solid !important;
-	border-radius: 0.25rem;
-	border-color: transparent;
+.tabs-list-item-button {
+	padding: 16px 24px;
+	cursor: pointer;
+	background-color: var(--color-bg);
+	color: var(--color-text-day) !important;
+	border-bottom: none;
+	transition: background-color 0.3s ease;
+	border-radius: 0;
+}
+
+.tabs-list-item-button:hover {
+	background-color: var(--color-blue-midnight);
+}
+
+.tabs-list-item-button.active {
+	background-color: var(--color-border);
 }
 
 .tab-content {

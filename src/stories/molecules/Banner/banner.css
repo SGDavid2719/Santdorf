@@ -2,15 +2,20 @@
 @import url("../../../styles/typography.css");
 
 .banner {
-	padding: 16px;
+	padding: 0 var(--space-sm);
 	border: 1px solid var(--color-border);
 	border-radius: 4px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	margin-bottom: 16px;
 	font-family: var(--font-primary);
+}
+
+.banner-icon {
+	color: currentColor;
+	stroke: currentColor;
+	fill: currentColor;
 }
 
 .banner.default {

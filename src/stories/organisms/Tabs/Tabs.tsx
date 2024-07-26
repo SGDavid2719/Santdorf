@@ -62,16 +62,13 @@ export function Tabs({
 					const handleActiveTab = () => setActiveTab(id);
 
 					return (
-						<li
-							key={id}
-							className={joinClassNames({
-								classNames: ["tabs-list-item"],
-							})}
-						>
+						<li key={id} className="tabs-list-item">
 							<Button
 								onClick={handleActiveTab}
-								btnType="primary"
-								extraClassName={activeTabClassName}
+								btnType="default"
+								extraClassName={joinClassNames({
+									classNames: ["tabs-list-item-button", activeTabClassName],
+								})}
 							>
 								{title}
 							</Button>
@@ -79,7 +76,6 @@ export function Tabs({
 					);
 				})}
 			</ul>
-			<hr />
 			<div className="tab-content">{TabContent}</div>
 		</div>
 	);

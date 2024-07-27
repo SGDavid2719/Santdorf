@@ -121,7 +121,7 @@ This hook runs the testing.
 
 ## License
 
-This project is licensed under the MIT License. For more details, see [LICENSE](https://github.com/SGDavid2719/URLShortener/blob/master/LICENSE)
+This project is licensed under the MIT License. For more details, see [LICENSE](https://github.com/SGDavid2719/Santdorf/blob/master/LICENSE)
 
 ## Contact
 

@@ -1,0 +1,19 @@
+:root {
+  /* Main colors */
+  --color-gray-lead: #1f1f1f;
+  --color-blue-midnight: #003366;
+  --color-coral-soft: #ff6f61;
+  --color-rose-gold: #eab676;
+  --color-dark-green: #31644f;
+
+  /* Colors for accessibility */
+  --color-text-day: #ffffff;
+  --color-text-night: #000000;
+  --color-border: #333333;
+  --color-bg: #1f1f1f;
+  --color-focus: #ffd700;
+
+  /* Colors for status */
+  --color-online: #00ff00;
+  --color-offline: #ff0000;
+}

@@ -1,0 +1,26 @@
+@import url('../../../styles/spacing.css');
+@import url('../../../styles/color.css');
+
+input {
+  background-color: var(--color-bg);
+  color: var(--color-text-day);
+  border: 1px solid var(--color-border);
+  padding: var(--space-xs) var(--space-md);
+  font-size: 16px;
+  border-radius: 4px;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.2s ease;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--color-gray-lead);
+}
+
+input:focus {
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);
+}

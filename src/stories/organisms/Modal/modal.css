@@ -1,0 +1,86 @@
+@import url('../../../styles/spacing.css');
+@import url('../../../styles/typography.css');
+
+.modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal--left {
+  left: 0;
+  top: 0;
+  width: 66%;
+  height: 100vh;
+}
+
+.modal--center {
+  width: 100%;
+  max-width: 80%;
+  top: 10vh;
+}
+
+.modal--right {
+  right: 0;
+  top: 0;
+  width: 66%;
+  height: 100vh;
+}
+
+.modal-backdrop {
+  z-index: 10;
+  background-color: black;
+  opacity: 0.25;
+}
+
+.modal-content {
+  position: fixed;
+  z-index: 20;
+}
+
+.modal-header {
+  justify-content: space-between;
+  display: flex;
+  padding-left: var(--space-xs);
+  padding-right: var(--space-xs);
+  font-family: var(--font-primary);
+}
+
+.modal-header--center {
+  background-color: transparent;
+  color: white;
+}
+
+.modal-header--aside {
+  background-color: white;
+  color: black;
+}
+
+.modal-header-title {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0.2em;
+}
+
+.modal-header-button {
+  width: fit-content;
+  min-width: fit-content !important;
+  padding: var(--space-xxxs) !important;
+}
+
+.modal-body {
+  margin-top: var(--space-xxs);
+  background-color: white;
+  height: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text-day);
+}

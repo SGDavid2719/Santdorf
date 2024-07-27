@@ -1,0 +1,75 @@
+@import url('../../../styles/color.css');
+@import url('../../../styles/typography.css');
+@import url('../../../styles/spacing.css');
+
+.btn {
+  width: auto;
+  min-width: 100%;
+  border-radius: 0.25rem;
+  border: none;
+  padding: var(--space-xs);
+  cursor: pointer;
+  font-family: var(--font-primary);
+}
+
+.btn.default {
+  color: var(--color-text-night);
+}
+
+.btn.primary {
+  background-color: var(--color-blue-midnight);
+  color: var(--color-text-day);
+}
+
+.btn.secondary {
+  background-color: var(--color-dark-green);
+  color: var(--color-text-day);
+}
+
+.btn.danger {
+  background-color: var(--color-coral-soft);
+  color: var(--color-text-night);
+}
+
+.btn.warning {
+  background-color: var(--color-rose-gold);
+  color: var(--color-text-night);
+}
+
+.btn.small {
+  font-size: var(--text-sm);
+}
+
+.btn.medium {
+  font-size: var(--text-md);
+}
+
+.btn.large {
+  font-size: var(--text-lg);
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.btn:focus {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.btn.primary:hover {
+  background-color: #002244; /* Darker shade for hover */
+}
+
+.btn.secondary:hover {
+  background-color: #295241; /* Darker shade for hover */
+}
+
+.btn.danger:hover {
+  background-color: #e05d51; /* Darker shade for hover */
+}
+
+.btn.warning:hover {
+  background-color: #d2a15c; /* Darker shade for hover */
+}

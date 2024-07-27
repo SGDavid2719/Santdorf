@@ -1,0 +1,36 @@
+.homepage {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  padding: 1rem;
+  font-family: var(--font-primary);
+}
+
+.homepage-header {
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.homepage-header-container {
+  display: flex;
+  gap: 1em;
+}
+
+.homepage-header-greeting {
+  color: var(--color-text-day);
+  font-size: var(--text-xxxl);
+}
+
+.homepage-header-shortDescription {
+  color: var(--color-text-day);
+  font-size: var(--text-lg);
+}
+
+.homepage-section {
+  padding: 1rem;
+}
+
+.homepage-section h2 {
+  font-size: var(--text-xxl);
+  color: var(--color-text-day);
+}

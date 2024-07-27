@@ -26,9 +26,15 @@
 }
 
 .badge.large {
-  font-size: var(--text-xl);
+  font-size: var(--text-md);
   width: var(--size-xl);
   height: var(--size-lg);
+}
+
+.badge.fit {
+  font-size: var(--text-sm);
+  width: auto;
+  height: auto;
 }
 
 .badge.default {
